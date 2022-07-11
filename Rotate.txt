@@ -1,0 +1,28 @@
+class Rotate
+{
+   public static voids main(String[] args)
+   {
+   int [] a=new[]{1,2,3,4,5};
+   int i,j,k;
+   
+        System.out.println(" the elements");
+        for(i=0; i<5; i++)
+        System.out.print(a[i]+" ");
+
+        System.out.println();
+        for(i=0; i<1; i++)
+        {
+          for(j=i+1; j<5; j++)
+          {
+             k=a[j];
+             a[j]=a[i];
+             a[i]=k;
+          }
+         }
+        System.out.println("After rotating ");
+        
+        for(i=0; i<5; i++)
+        System.out.print(a[i]+" ");
+      }
+}
+            
